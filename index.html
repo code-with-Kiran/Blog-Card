@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <img src="image.jpg" alt="image"
+    height="220"
+    width="300"> -->
+    <style>
+        .parent{
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            box-shadow: 0px 0px 15px grey;
+            width: fit-content;
+            max-width: 350px;
+            border-radius: 15px;
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            align-items: start;
+            padding: 0.5rem;
+        }
+
+        .container:hover{
+            box-shadow: 10px 10px 15px grey;
+            transform: rotate(5deg);
+        }
+
+        .imageContainer{
+            width: 100%;
+            height: 200px;
+        }
+
+        .imageStyle{
+            object-fit:cover;
+            height: 100%;
+            width: 100%;
+            border-radius: 14px;
+        }
+
+        .tagStyle{
+            width: fit-content;
+            border: 1px solid grey;
+            padding: 2px 8px;
+            border-radius: 33px;
+            background-color: white;
+            color: gray;
+        }
+
+        .tagContainer{
+            width: 100%;
+            display: flex;
+            justify-content: start;
+            gap: 0.5rem;
+        }
+
+        .cardBodyContainer{
+            margin-top: 25px;
+            padding: 0 10px;
+            padding-bottom: 8px;
+        }
+
+        .buttonStyle{
+            width: fit-content;
+            padding: 11px 19px;
+            border-radius: 33px;
+            background-color: skyblue;
+            color: blue;
+            text-decoration: none !important;
+            box-shadow: 0px 1px 2px rgb(1, 23, 30);
+        }
+
+        .buttonContainer{
+            display: flex;
+            justify-content: center;
+        }
+
+        a{
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <div>
+        <div>
+            <h1>Thailand</h1>
+        </div>
+        
+        <p>
+            Thailand is well-known for its postcard-worthy beaches, majestic limestone cliffs, friendly locals, and
+            glimmering temples. But beyond its natural beauty and tourist attractions, the Land of Smiles also has a
+            unique culture and history that not many people know some are odd and bizarre.
+        </p>
+        <div>
+            <link rel="thailand" href="https://www.bing.com/search?q=thailand+images&qs=HS&sk=HS2&sc=20-0&cvid=FEB58B76A71E457A9150B20831ACD623&FORM=QBRE&sp=3&lq=0">
+        </div>
+    </div> -->
+
+    <div class="parent">
+        <!-- #card parent -->
+        <div class="container">
+            <!-- image sec  -->
+             <div class="imageContainer">
+                 <img src="image.jpg" alt="image"  class="imageStyle">
+            </div>
+            
+            <!-- body sec  -->
+            <div class="cardBodyContainer">
+                <!-- Tag sec  -->
+                <div class="tagContainer">
+                    <span class="tagStyle">Nature</span>
+                    <span class="tagStyle">Lake</span>
+                </div>
+
+                <!-- heading sec  -->
+                <h1>Lago di Baries</h1>
+
+                <!-- descrip  -->
+                <p style="color: gray; font-size: 18px;"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis, harum molestias? Accusamus quae
+                    esse ipsam consequuntur quas totam eius molestias quo, modi quam et asperiores officia voluptate
+                    quidem, impedit nobis, doloribus eveniet! Aliquam, soluta adipisci!</p>
+
+                <!-- button sec  -->
+                <div class="buttonContainer">
+                    <a href="http://google.com" target="_blank" rel="noopener noreferrer">
+                    <span class="buttonStyle">Read More</span>
+                </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
